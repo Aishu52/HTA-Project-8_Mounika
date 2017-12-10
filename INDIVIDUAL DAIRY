@@ -22,3 +22,23 @@ http://pubs.acs.org/doi/abs/10.1021/pr500741y
 https://www.ncbi.nlm.nih.gov/pubmed/17952086
 https://www.ncbi.nlm.nih.gov/pubmed/22186716
 
+DATE: 5-12-2017 
+SECOND GROUP MEETING at scilife lab.
+
+Dari explained about our data files format (dta files) and how they should be converted into mzML or mzXML as these formats are 
+preferred while dealing with MS data. We used open MS software (the file converter) to convert our data files into mzML and mzXML
+in order to run hardklör.
+•	We started with running hardklör by downloading it. 
+•	Initially we ran hardklör with provided configuration file which caused ‘invalid output file’ error. But, we fixed it by running 
+hardklör with command line approach.
+•	But now we faced ‘input file missing spectral data’ error. We dint understand the exact problem. We removed optimisation flag and 
+added debugging flag.
+•	Then we used GNU debugger (GDB) to solve, but it did not help. 
+•	We tried using MGF format by converting dta files to MGF. We also tried to run hardklör on windows version but ended up with same error. 
+•	Then we realised that Hardklör algorithm is already implemented in the Crux through Bullseye, so we decided to work with crux. 
+•	We noticed that crux need MS1 and MS2 file formats as input. So, we went back to OpenMS and tried to export a MS1 file from the 
+dta-file. But we failed even after multiple attempts. 
+•	We assumed that the problem might be because of missing spectra files.
+•	So, we contacted KI and requested for raw data. They sent us an mzML file.
+•	Finally, we extracted MS1 and MS2 files using Open MS/MS file converter.
+•	Then we used Crux tide index (created index using FASTA file from Cambridge data) and ran crux tide search.
