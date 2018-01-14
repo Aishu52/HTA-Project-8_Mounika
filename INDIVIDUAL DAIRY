@@ -41,4 +41,59 @@ dta-file. But we failed even after multiple attempts.
 •	We assumed that the problem might be because of missing spectra files.
 •	So, we contacted KI and requested for raw data. They sent us an mzML file.
 •	Finally, we extracted MS1 and MS2 files using Open MS/MS file converter.
-•	Then we used Crux tide index (created index using FASTA file from Cambridge data) and ran crux tide search.
+
+DATE: 06-12-2017 – 10-12-2017
+
+We ran Crux bullseye on the extracted MS1 and MS2 files, ran crux tide index (which is a pre- searching tool on crux software) on FASTA
+file and crux tide search (which is a search tool on crux software) using bullseye output file and crux tide- index output file. 
+Then the results or the outputs from crux tide search are now ran in the percolator and got PSMs in the output file. 
+Done some literature studies about the tool. At the same time, we prepared for the next presentation about our project. 
+
+DATE: 11-12-2017
+
+A Half-time presentation of our project was presented to other groups in the class. 
+
+DATE: 12-12-2017
+
+Revant installed and ran MODa software using the MS2 files that we have extracted from raw KI data by coverting them to mzXML format 
+and provided us with the results data. Dari and Revant wrote a simple parser to convert these MODa output files to CSV files 
+(using pandas).
+
+DATE: 15-12-2017 to 24-12-2017
+
+Presentation was given by the teachers regarding how the posters should be.
+We had another GROUP MEETING after the lecture.
+We discussed about how this data (outputs from Crux and MoDA) can be compared and analysed. A discussion about UniMod was done.  
+So, after the discussion we had 2 views to analyse this data.
+1.	Based on using CryoEM data.
+Creating a peptide list based on their score and look for matchings / peptide-spectrum match. Planned to identify the unannotated
+densities and match against the peptide candidates. Remove artifacts, look at proteins. Create a specific list of proteins, 
+look at protein density separately, give a ranking and look for matchings. This procedure would be advantageous to find out most 
+probable PTM in an individual protein.
+2.	Based on downloading, using the uniMod data:
+It is a public domain database, a copy right that permits unrestricted redistribution and modification provided that all copies, 
+derivatives retain the same permissions.
+The purpose is to create a comprehensive database of protein modifications for MS applications. That is, accurate and verifiable values,
+derived from elemental compositions, for the mass differences introduced by all types of natural and artificial modifications. Other
+important information includes any mass change, (neutral loss) that occurs during MS/MS analysis, and site specificity, (which residues 
+are susceptible to modification and any constraints on the position of the modification within the protein or peptide). 
+We discussed to download the uniMod data, go through it and do some literature study. We might need to write a script to run it if
+downloading creates trouble. Once we have the UniMod data, we will only keep the peptides that show Post translational modifications 
+(PTMs) but not remaining or any other kind of modifications. Then we will see if the PTMs in the peptides show up as unidentified 
+electron densities in the CryoEM data.
+
+CHRISTMAS AND NEW YEAR
+
+DATE: 03-01-2018 to 10-01-2018
+
+•	Unimod database was downloaded and Dari wrote a parser for converting it into CSV files. 
+•	Then finally, a digestion script by Dari was ran to crossrun both the MODa output CSV files and UniMod database CSV files. 
+•	The output provided a list containing MODa spectrum matched with UniMod database based on delta mass and site type. 
+•	Finally, PTM matches relevant for ribosomes and supported by multiple spectra are filtered and listed out.
+
+DATE: 11-01-2018
+Group meeting at scilife lab
+
+•	We divided our work and started to analyse the PTM list. 
+•	We started searching information about PTMs online and updated the list with gathered information. 
+
