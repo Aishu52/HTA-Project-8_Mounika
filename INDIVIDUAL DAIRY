@@ -94,6 +94,23 @@ DATE: 03-01-2018 to 10-01-2018
 DATE: 11-01-2018
 Group meeting at scilife lab
 
-•	We divided our work and started to analyse the PTM list. 
-•	We started searching information about PTMs online and updated the list with gathered information. 
+• We divided our work and started to trace for PTM’s in cryo-EM map. But, we could not find many of them due to low resolution in cryo-EM
+  map.
+•	Finally, we fixed some criteria to filter PTM’s based on scoring, delta mass, residues, etc.
+•	We started searching information about filtered PTMs online and updated the list with gathered information.
+
+DATE: 15-01-2018
+
+•	Went to collect poster at KTH.
+
+FINAL POSTER PRESENTATION AT SCILIFE LAB.
+
+•	Main purpose of our poster was to let everyone know about our research. Our project aim was to look at possible PTMs within MS data 
+and find traces of it on cryoEM data of LSU of human mitochondrial ribosome (from scilife). Four different modifications we encountered
+namely: di-methylation on proline, lipoylation on lysine, 4-hydrxynonenal on leucine and glycerol 3-phosphate on serine are highlighted.
+•	Selection was done based on the score and probability of MODa entries. But, on the other hand it could be noise as well, therefore 
+further biological testing is needed to confirm that they are real post translational modifications but not noise.
+•	Overall, the poster session went on well. 
+
+
 
